@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Codester | Home</title>
+    <title>JUG.EKB</title>
     <meta charset="utf-8">
+    <meta name="author" content="Sergey Tselovalnikov">
     <link rel="icon" href="/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="http://dzyngiri.com/favicon.png" type="image/x-icon"/>
-    <meta name="description" content="Codester is a free responsive Bootstrap template by Dzyngiri">
-    <meta name="keywords" content="free, template, bootstrap, responsive">
-    <meta name="author" content="Inbetwin Networks">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/kwicks-slider.css" type="text/css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>-->
     <script type="text/javascript" src="js/jquery.js"></script>
-    <!--<script type="text/javascript" src="js/superfish.js"></script>-->
+    <script type="text/javascript" src="js/superfish.js"></script>
     <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
     <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <script type="text/javascript" src="js/touchTouch.jquery.js"></script>
     <script type="text/javascript">
         if ($(window).width() > 1024) {
@@ -38,6 +35,11 @@
             });
         });
     </script>
+    <style type="text/css">
+        .container {
+            width: 968px;
+        }
+    </style>
 
     <!--[if lt IE 8]>
     <div style='text-align:center'>
@@ -67,7 +69,7 @@
                         <h1 class="brand_">
                             <a href="index.html">
                                 <div style="font-size: 62px; margin-top: 30px; color: #000000; font-family: sans-serif">
-                                    JUG.EKB
+                                    <b><!-- img style="margin-right: 15px;" width="20px" src="img/duke_wave.png"-->JUG.EKB</b>
                                 </div>
                             </a>
                         </h1>
@@ -77,17 +79,9 @@
 
                         <div class="nav-collapse nav-collapse_  collapse">
                             <ul class="nav sf-menu">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="work.html">Work</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li class="sub-menu"><a href="process.html">Process</a>
-                                    <ul>
-                                        <li><a href="#">Process 01</a></li>
-                                        <li><a href="#">Process 02</a></li>
-                                        <li><a href="#">Process 03</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li class="active"><a href="index.html">Встречи</a></li>
+                                <li><a href="work.html">Команда</a></li>
+                                <li><a href="contact.html">Спонсоры</a></li>
                             </ul>
                         </div>
                     </div>
@@ -96,22 +90,56 @@
         </div>
     </div>
 </header>
-<div class="bg-content">
-    <!-- content -->
-    <div id="content" class="content-extra">
-        <div class="ic"></div>
-        <div class="row-1">
-            <div class="container">
-                <div class="row">
-                    <article class="span12">
-                        <h4>Our Work</h4>
-                    </article>
-                    <div class="clear"></div>
+
+<!-- content -->
+<div id="content" class="content-extra">
+    <div class="ic"></div>
+    <div class="row-1">
+        <div style="width: 968px;" class="container">
+            <div  class="row">
+                <article>
+                    <h4>Про JUG.EKB</h4>
+                </article>
+                <div style="font-size: 22px; color: #252525; line-height: 1.62">
+                    <p>
+                        JUG.EKB - cообщество Java разработчиков Екатеринбурга.<br/>
+
+                        JUG - Java User Group, встречи JUG.EKB - это обсуждение различных технологий из мира Java,
+                        обмен
+                        опытом, а также просто интересное общение!<br/>
+
+                        Мы планируем регулярно проводить встречи JUG.EKB с лекциями Java экспертов на самые
+                        интересные темы.
+                    </p>
                 </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-1">
+        <div class="container">
+            <div class="row">
+                <article>
+                    <h4>Первая встреча JUG.EKB</h4>
+                </article>
+                <div style="font-size: 22px; color: #252525">
+                    <h5>Регистрация</h5>
+                    <div style="width: 600px">
+                        <script defer="defer" data-timepad-widget-v2="event_register" data-timepad-customized="2941"
+                                src="//timepad.ru/js/tpwf/loader/min/loader.js">
+                            (function () {
+                                return {"event": {"id": "120007", "org": "26257", "subdomain": "jugekb"}};
+                            })();
+                        </script>
+                    </div>
+                </div>
+                <div class="clear"></div>
             </div>
         </div>
     </div>
 </div>
+
 
 <!-- footer -->
 <footer class="navbar-fixed-bottom">

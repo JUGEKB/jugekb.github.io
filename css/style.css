@@ -60,9 +60,8 @@ a[href^="tel:"] {
 }
 /*------ header ------- */
 header {
-  /*padding: 30px 0 29px;*/
   z-index: 50;
-  background: #F25C27 /*url(../img/header-bg.png) repeat*/;
+  background: #ee6600;
 }
 /* navbar */
 .navbar_ {
@@ -213,12 +212,7 @@ header {
   line-height: 0;
 }
 /*------ h1, h2, h3, h4, h5, h6 ------- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   text-transform: none;
   color: #F25C27;
   font-family: 'Open Sans', sans-serif;
@@ -247,7 +241,7 @@ h3 {
   margin:25px 0;
 }
 h4 {
-  font-size: 48px;
+  font-size: 42px;
   line-height: 50px;
   margin: 21px 0 20px;
 }
@@ -266,9 +260,6 @@ p {
 #content {
   position: relative;
   padding: 0 0 40px;
-}
-.bg-content {
-  background: url(../img/bg-content.jpg) 50% 50%;
 }
 .block-slogan {
   overflow: hidden;
@@ -303,7 +294,7 @@ p {
 	font-style:italic;}
 .row-2 h3 {
 	margin:10px 0;
-	font-style:normal;}	
+	font-style:normal;}
 .ic {
   border:0;
   float:right;
@@ -1044,7 +1035,7 @@ footer {
     position: relative;
     zoom: 1;
     z-index: 999;
-    width: 113px;
+    width: 120px;
     background:url("../img/bg-content.jpg") repeat scroll 50% 50% transparent;
     padding: 12px 0;
     margin: 0;
