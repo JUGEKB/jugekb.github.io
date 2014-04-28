@@ -95,7 +95,6 @@
                     </div>
                 </div>
                 <div class="clear"></div>
-                <hr style="border-color: #e7e7e7">
 
                 <style scoped="scoped">
                     .maildiv a {
@@ -111,7 +110,26 @@
                     .maildiv > a:hover {
                         color: #eb4300;
                     }
+
+                    .partdiv {
+                        font-size: 22px;
+                        color: #686468;
+                        line-height: 1.4;
+                        clear: both
+                    }
+
+                    .parline {
+                        border-color: #e7e7e7
+                    }
                 </style>
+                <hr class="parline">
+                <div>
+                    <div class="partdiv">Событийный партнёр: </div>
+                    <a href="http://it-sobytie.ru/">
+                        <img src="data:image/png;base64,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" />
+                    </a>
+                </div>
+                <hr class="parline">
                 <div class="maildiv">
                     Хочешь поддержать JUG.EKB? <br/>Напиши нам: <a href="mailto:jugekb@gmail.com"><i>jugekb@gmail.com!</i></a>
                 </div>
