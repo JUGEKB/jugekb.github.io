@@ -7,6 +7,10 @@ a[href^="tel:"] {
     text-decoration: none;
 }
 
+a:hover {
+    color: #eb4300;
+}
+
 .color-1 {
     color: #efedef;
 }

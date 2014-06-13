@@ -17,6 +17,31 @@
         .container {
             width: 968px;
         }
+
+        .title {
+            font-size: 28px;
+        }
+    </style>
+    <style scoped="scoped">
+        .video {
+
+        }
+        .text-div {
+            margin-left: 215px
+        }
+        .main-text {
+            line-height: 1.3;
+            text-align: justify
+        }
+        .author {
+            color: #414141
+        }
+        .avatar {
+            float: left
+        }
+        .presentation {
+            margin-top: 15px;
+        }
     </style>
 
     <!--[if lt IE 8]>
@@ -57,8 +82,8 @@
 
                         <div class="nav-collapse nav-collapse_  collapse">
                             <ul class="nav sf-menu">
-                                <li class="active"><a href="index.html">Анонсы</a></li>
-                                <li><a href="events.html">Встречи</a></li>
+                                <li><a href="index.html">Анонсы</a></li>
+                                <li class="active"><a href="events.html">Встречи</a></li>
                                 <li><a href="sponsors.html">Партнеры</a></li>
                             </ul>
                         </div>
@@ -71,30 +96,6 @@
 
 <!-- content -->
 <div id="content" class="content-extra">
-    <div class="ic"></div>
-    <div class="row-1">
-        <div style="width: 968px;" class="container">
-            <div class="row">
-                <article>
-                    <h4>Про JUG.EKB</h4>
-                </article>
-                <div style="font-size: 22px; color: #252525; line-height: 1.62">
-                    <p>
-                        JUG.EKB - cообщество Java разработчиков Екатеринбурга.<br/>
-
-                        JUG - Java User Group, встречи JUG.EKB - это обсуждение различных технологий из мира Java,
-                        обмен
-                        опытом, а также просто интересное общение!<br/>
-
-                        Мы планируем регулярно проводить встречи JUG.EKB с лекциями Java экспертов на самые
-                        интересные темы.
-                    </p>
-                </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-    </div>
-
     <div class="row-1">
         <div class="container">
             <div class="row">
@@ -103,10 +104,42 @@
                 </article>
                 <div style="font-size: 22px; color: #252525">
                     <p>Первая встреча JUG.EKB прошла 15 мая во Freelance Cafe (ТЦ Мытный Двор, ул. 8 Марта, 8Д)</p>
-                    <style scoped="scoped">
+                    <b><p>Доклады:</p></b>
+                    <div style="width: 100%">
+                        <div class="avatar">
+                            <img src="img/starowoyt.jpg">
+                        </div>
+                        <div class="text-div">
+                            <p class="title">Практики тестирования кода</p>
+                            <p class="author">Андрей Старовойт из JetBrains</p>
+                            <p class="main-text">
+                                Я расскажу про способы борьбы с ошибками прямо из IDE, минуя стадию запуска приложения.
+                            </p>
+                            <div style="margin-top: 35px" class="video">
+                                <iframe width="100%" height="380" src="//www.youtube.com/embed/y1v6mkLht0k" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <p class="presentation"><a href="presentations/jug1_static_analysis.pdf">Презентация</a></p>
+                        </div>
+                    </div>
+                    <div style="width: 100%; margin-top: 85px">
+                        <div class="avatar">
+                            <img src="img/tselovalnikov.jpg">
+                        </div>
+                        <div class="text-div">
+                            <p class="title">Как не наступить на грабли, внедряя скрипты в java приложение</p>
+                            <p class="author">Сергей Целовальников из Naumen</p>
+                            <p class="main-text">Однажды вы решаете добавить динамики приложению и в вашем Java коде появляется Groovy, либо любой другой скриптовый язык. И Groovy приносит свою магию.<br/>
+                                Сначала её мало, но затем её становится все больше и больше!
+                                Вместе со скриптами появляется много вопросов - а если?, а как?, а почему?
+                                А если я переименую этот класс? А как удобно писать скрипты? А почему скрипты сломались? И т.д.<br/>
 
-                    </style>
-                    <p><a class="" href="events.html">Подробнее...</a></p>
+                                Я расскажу как сделать так, чтобы написание скриптов приносило радость, их поддержка не была болью, а Groovy стал вашим лучшим другом!</p>
+                            <div class="video">
+                                <iframe width="100%" height="380" src="//www.youtube.com/embed/ShjuZLumSJ0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <p class="presentation"><a href="presentations/jug1_scripts.pdf">Презентация</a></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="clear"></div>
             </div>
