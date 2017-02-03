@@ -101,6 +101,7 @@
             <div class="row">
                 <h4 style="font-size: 28px; margin-bottom: -20px">Прошедшие встречи</h4>
                 <ul>
+                    <li><h3 style="font-size: 22px; margin-bottom: -25px"><a href="#seven">Седьмая встреча</a></h3></li>
                     <li><h3 style="font-size: 22px; margin-bottom: -25px"><a href="#sixth">Шестая встреча</a></h3></li>
                     <li><h3 style="font-size: 22px; margin-bottom: -25px"><a href="#fifth">Пятая встреча</a></h3></li>
                     <li><h3 style="font-size: 22px; margin-bottom: -25px"><a href="#fourth">Четвертая встреча</a></h3></li>
@@ -108,6 +109,58 @@
                     <li><h3 style="font-size: 22px; margin-bottom: -25px"><a href="#second">Вторая встреча</a></h3></li>
                     <li><h3 style="font-size: 22px"><a href="#first">Первая встреча</a></h3></li>
                 </ul>
+            </div>
+            <div class="row">
+                <article id="seven">
+                    <h4>Седьмая встреча JUG.EKB</h4>
+                </article>
+                <div style="font-size: 22px; color: #252525">
+                    <p>Седьмая встреча JUG.EKB прошла 22 сентября в Коворкинге "Соль".</p>
+                    <b><p>Доклады:</p></b>
+                    <div style="width: 100%">
+                        <div style="float: left">
+                            <img src="img/cheremin.jpg">
+                        </div>
+                        <div style="margin-left: 215px">
+                            <p class="title">Escape Analysis и скаляризация</p>
+                            <p class="author">Руслан Черемин, Deutsche bank</p>
+                            <p style="line-height: 1.2; text-align: justify; color: #747474">
+                                Работает с Java уже около 10 лет, начиная еще с версии 1.1. Вел разработку и клиентских и серверных приложений. В последние годы разрабатывал систему имитационного моделирования в Яндексе. В настоящее время занимается оптимизацией систем электронных торгов в Deutsche Bank.
+                            </p>
+                            <p style="line-height: 1.3; text-align: justify">
+                                В высокопроизводительных приложениях аллокация нередко становится одним из узких мест — если не непосредственно, то через увеличение нагрузки на GC. Написание же garbage-less кода в джаве требует нетривиальных усилий, код становится сложнее и менее понятным. Современные JIT-ы  умеют, в некоторых случаях, самостоятельно стирать аллокации короткоживущих объектов, превращая их поля в набор эквивалентных локальных переменных. Эта оптимизация (скаляризация) появилась еще в версии 1.6, и с тех пор прошло уже 7 лет, но в открытых источниках удивительно мало деталей — где и когда эта оптимизация срабатывает, а где не срабатывает, насколько надежно она работает, и что может ей помешать. 
+                            </p>
+                            <p style="line-height: 1.3; text-align: justify">
+                                "Доклад построен вокруг набора практических  примеров, на которых, как на кошках, я изучал сильные и слабые стороны текущей реализации. В итоге, я надеюсь, у вас в репертуаре появится альтернативный способ создания garbage-less кода, не за счет ручного устранения аллокаций, а за счет использования более JIT-friendly аллокаций".
+                            </p>
+                            <div class="video">
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/QBQoiLxh9lE" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/WyanmWXuEFU" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 100%; margin-top: 85px">
+                        <div style="float: left">
+                            <img src="img/chujko.jpg">
+                        </div>
+                        <div style="margin-left: 215px">
+                            <p class="title">Ahead of time компиляция для Hotspot</p>
+                            <p class="author">Дмитрий Чуйко, Oracle</p>
+                            <p style="line-height: 1.2; text-align: justify; color: #747474">
+                                Performance-инженер в Oracle. Более 10 лет опыта в различных компаниях, включая Borland, Yota, QuickOffice и Deutsche Bank.
+                            </p>
+                            <p style="line-height: 1.3; text-align: justify">
+                                Существуют различные реализации Java. В некотрых из них есть ahead-of-time (AOT) компиляторы, причём подход к решению различный, да и постановка задачи разная. В Hotspot есть JIT‑компиляция, но нет стандартного AOT. Не обязательно, что так будет всегда. Мы поговорим о том, зачем может понадобится заранее получать нативный код, как это делается и работает в реализации для Hotspot. И с другой стороны, как Java-код может встраиваться в процесс JIT‑компиляции.
+                            </p>
+                            <div class="video">
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/kCZDm0Lw9gs" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/0YwEcHsu85c" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/RLvXHxX2Pv0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
             </div>
             <div class="row">
                 <article id="sixth">
@@ -130,7 +183,7 @@
                                 Протокол TCP существует уже более 30 лет. Сетевые коммуникации являются неотъемлемой частью практически любого современного приложения. Тем не менее, сетевое программирование продолжает оставаться зоной проблем и опасностей. Но несмотря на простой интерфейс, программирование "сокетов" далеко не простая задача. Тема этого доклада "правильное" использование TCP/IP и Java socket API. Знаете ли вы что происходит при закрытии сокета? Как опции TCP влияют на производительность? Какие исключения может кидать сокет в Java? - Не уверены, тогда этот доклад для вас.
                             </p>
                             <div class="video">
-                                <iframe width="100%" height="380" src="//www.youtube.com/embed/JIqR7ysbFR8" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/JIqR7ysbFR8" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -148,7 +201,7 @@
                                 Весь мир ждет выхода первой версии нового языка программирования от JetBrains под названием Kotlin. Но в мире мобильной разработки под Android мы ожидаем его с еще большим трепетом. Этот язык уже сейчас решает большое количество наших задач, которые стандартными средствами решаются не очень красиво или нетривиально. Используя стандартную библиотеку языка Kotlin мы освобождаемся от всего того багажа утильных библиотек на java которые мы были вынуждены таскать из проекта в проект. У Kotlin отличный потенциал для разработки в реактивной парадигме, которая сейчас постоянно набирает популярность во всей индустрии и в том числе в разработке мобильных приложений. Но т.к. язык новый и сообщество очень молодое, то все шишки еще не набиты. Я расскажу про подводные камни при написании UI, реактивного программирования, DI и почему уже даже сейчас можно переходить с Java на Kotlin для Android. Доклад будет интересен не только мобильным разработчикам, но и всем, кто интересуется современными JVM языками.
                             </p>
                             <div class="video">
-                                <iframe width="100%" height="380" src="//www.youtube.com/embed/2oVpnArCdWI" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/2oVpnArCdWI" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -175,7 +228,7 @@
                                 <li>разделение клиентского кода на части и их отложенная подгрузка</li>
                             </p>
                             <div class="video">
-                                <iframe width="100%" height="380" src="//www.youtube.com/embed/gO4N-YKJymM" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/gO4N-YKJymM" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -207,7 +260,7 @@
                                 В этом докладе мы обсудим краеугольные проблемы любой распределенной системы, основанной на обмене сообщениями, и уже с этими знаниями взглянем еще разок на JMS и альтернативы с точки зрения практических сценариев из реальной жизни.
                             </p>
                             <div class="video">
-                                <iframe width="100%" height="380" src="//www.youtube.com/embed/RVwXdCfzJZA" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/RVwXdCfzJZA" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -225,7 +278,7 @@
                                 При разработке web-приложений перед Java-разработчиками встаёт вопрос выбора технологий. Часто разработчики хотят остаться в Java/XML-мире, выбирая GWT или JSF. Я постараюсь предложить решение, которое бы выходило за рамки Java/XML-мира, сохранив его плюсы и устранив некоторые его минусы. В основе решения со стороны сервера лежат Spring Framework и FreeMarker, а со стороны клиента – AngularJS и TypeScript. На докладе я расскажу про применение MVC одновременно на клиенте и сервере, двухуровневую шаблонизацию, особенность использования TypeScript.
                             </p>
                             <div class="video">
-                                <iframe width="100%" height="380" src="//www.youtube.com/embed/ZFv_pQKJL-w" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/ZFv_pQKJL-w" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -254,7 +307,7 @@
                                 Будут затронуты вопросы I/O, кеширования, сериализации и межсерверного взаимодействия.
                             </p>
                             <div class="video">
-                                <iframe width="100%" height="380" src="//www.youtube.com/embed/kdow9j5J7ys" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/kdow9j5J7ys" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <p class="presentation"><a href="presentations/pangin-jug-ekb.pdf">Слайды</a></p>
                         </div>
@@ -280,7 +333,7 @@
                             </ul>
                             </p>
                             <div class="video">
-                                <iframe width="100%" height="380" src="//www.youtube.com/embed/rnOvqvydp0Y" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/rnOvqvydp0Y" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <p class="presentation"><a href="http://d0k1.github.io/JUG.EKB.GWT">Слайды</a></p>
                         </div>
@@ -314,7 +367,7 @@
                                 (от высокоуровневых решений и до машинного кода) и диагностирования проблем.
                             </p>
                             <div class="video">
-                                <iframe width="100%" height="380" src="//www.youtube.com/embed/sL8nt8CXsZQ" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/sL8nt8CXsZQ" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <!--<p class="presentation"><a href="presentations/jug1_scripts.pdf">Презентация</a></p>-->
                         </div>
@@ -335,7 +388,7 @@
                                 проблемы в Java, при этом повышая общее качество и скорость написания кода.
                             </p>
                             <div class="video">
-                                <iframe width="100%" height="380" src="//www.youtube.com/embed/yloeoHbTZIc" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/yloeoHbTZIc" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <!--<p class="presentation"><a href="presentations/jug1_scripts.pdf">Презентация</a></p>-->
                         </div>
@@ -369,7 +422,7 @@
                                 и упрощения отладки и поддержки.
                             </p>
                             <div class="video">
-                                <iframe width="100%" height="380" src="//www.youtube.com/embed/ApEEEOtmOjc" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/ApEEEOtmOjc" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <!--<p class="presentation"><a href="presentations/jug1_scripts.pdf">Презентация</a></p>-->
                         </div>
@@ -391,7 +444,7 @@
                                 недостатками обладают эти альтернативы? Как не набить шишек при переводе проекта с Ant на какой-нибудь Gradle?
                             </p>
                             <div class="video">
-                                <iframe width="100%" height="380" src="//www.youtube.com/embed/Xa_1cPfp8Vo" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/Xa_1cPfp8Vo" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <!--<p class="presentation"><a href="presentations/jug1_scripts.pdf">Презентация</a></p>-->
                         </div>
@@ -418,7 +471,7 @@
                                 Я расскажу про способы борьбы с ошибками прямо из IDE, минуя стадию запуска приложения.
                             </p>
                             <div style="margin-top: 35px" class="video">
-                                <iframe width="100%" height="380" src="//www.youtube.com/embed/y1v6mkLht0k" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/y1v6mkLht0k" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <p class="presentation"><a href="presentations/jug1_static_analysis.pdf">Слайды</a></p>
                         </div>
@@ -437,7 +490,7 @@
 
                                 Я расскажу как сделать так, чтобы написание скриптов приносило радость, их поддержка не была болью, а Groovy стал вашим лучшим другом!</p>
                             <div class="video">
-                                <iframe width="100%" height="380" src="//www.youtube.com/embed/ShjuZLumSJ0" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="100%" height="380" src="http://www.youtube.com/embed/ShjuZLumSJ0" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <p class="presentation"><a href="presentations/jug1_scripts.pdf">Слайды</a></p>
                         </div>
